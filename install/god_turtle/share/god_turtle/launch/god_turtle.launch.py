@@ -33,7 +33,7 @@ def generate_launch_description():
     
     controller_node = Node(
         package='god_turtle',
-        namespace='',
+        namespace=teleop_turtle_name,
         executable='controller.py',
         name='controller_node'
     )

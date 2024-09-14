@@ -84,11 +84,14 @@ class TeleopNode(Node):
     def timer_callback(self):
         key = get_key(self.settings)
         if key in KEY_BINDINGS:
-                linear, angular = KEY_BINDINGS[key]
-                self.cmdvel(linear, angular)
+            linear, angular = KEY_BINDINGS[key]
+            self.cmdvel(linear, angular)
     
         elif key == 'i':
-                self.send_flag(1)
+            self.send_flag(1)
+                
+        elif key == 'e':
+            self.send_flag(2)
                 
         elif key == "\x03" :
             rclpy.shutdown()
