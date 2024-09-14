@@ -29,6 +29,7 @@ ament_python_install_package(${PROJECT_NAME})
 install(PROGRAMS
   scripts/dummy_script.py
   scripts/teleop_turtle.py
+  scripts/controller.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -48,7 +49,7 @@ install(TARGETS
 
 ################ INSTALL LAUNCH, ETC #################
 install(DIRECTORY
-  # add directories here
+  launch
   DESTINATION share/${PROJECT_NAME})
 
 ament_package()

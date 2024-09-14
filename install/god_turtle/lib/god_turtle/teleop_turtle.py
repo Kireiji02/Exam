@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from god_turtle.dummy_module import dummy_function, dummy_var
+# from god_turtle.dummy_module import dummy_function, dummy_var
 import yaml
 import rclpy
 import sys
@@ -40,15 +40,15 @@ class TeleopNode(Node):
         #--------------------Variables--------------------#
         
         self.declare_parameter('frequency', 10.0)   
-        self.frequency = self.get_parameter('frequency').get_parameter_value().double_value
+        self.frequency = self.get_parameter('frequency').value
         
         self.create_timer(1/self.frequency, self.timer_callback)
         # self.target_pos = self.loadYAML()
         
         #---------------------Topics---------------------#
 
-        self.cmd_vel_pub = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
-        self.create_subscription(Pose, 'turtle1/pose', self.callback_pose, 10)
+        self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.create_subscription(Pose, 'pose', self.callback_pose, 10)
         
         #--------------------Services--------------------#
         
@@ -67,7 +67,6 @@ class TeleopNode(Node):
     #         data = yaml.safe_load(file)
     #         return data['targets']
         
-
     #---------------------Callback---------------------#
     
     def timer_callback(self):
@@ -77,8 +76,8 @@ class TeleopNode(Node):
 
         key = get_key(self.settings)
         if key in KEY_BINDINGS:
-                v, w = KEY_BINDINGS[key]
-                self.cmdvel(v, w)
+                linear, angular = KEY_BINDINGS[key]
+                self.cmdvel(linear, angular)
         elif key == 'i':
             self.spawn_pizza(msg.x, msg.y)
         self.get_logger().info(f"{msg.x} and {msg.y}")
