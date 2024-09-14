@@ -3,15 +3,39 @@
 from god_turtle.dummy_module import dummy_function, dummy_var
 import yaml
 import rclpy
+import sys
+import termios
+import tty
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from turtlesim.msg import Pose
 from turtlesim_plus_interfaces.srv import GivePosition
 
+# Key bindings
+KEY_BINDINGS = {
+    'w': (3.0, 0.0),
+    's': (-3.0, 0.0),
+    'a': (0.0, 2.0),
+    'd': (0.0, -2.0),
+    'q': (0.0, 0.0)
+}
+
+def get_key(settings):
+    """
+    Capture key input from the terminal.
+    """
+    tty.setraw(sys.stdin.fileno())
+    key = sys.stdin.read(1)
+    termios.tcsetattr(sys.stdin, termios.TCSADRAIN, settings)
+    return key
 
 class TeleopNode(Node):
     def __init__(self):
         super().__init__('teleop_node')
+
+        #--------------------Keyblinds--------------------#
+
+        self.settings = termios.tcgetattr(sys.stdin)
         
         #--------------------Variables--------------------#
         
@@ -22,7 +46,7 @@ class TeleopNode(Node):
         # self.target_pos = self.loadYAML()
         
         #---------------------Topics---------------------#
-        
+
         self.cmd_vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
         self.create_subscription(Pose, 'pose', self.callback_pose, 10)
         
@@ -43,6 +67,17 @@ class TeleopNode(Node):
     #         data = yaml.safe_load(file)
     #         return data['targets']
         
+    #---------------------Key Publishers---------------------#
+
+    def send_velocity(self, linear, angular):
+        """
+        Publish the Twist message with the specified linear and angular velocities.
+        """
+        twist = Twist()
+        twist.linear.x = linear
+        twist.angular.z = angular
+        self.cmd_vel_pub.publish(twist)
+
     #---------------------Callback---------------------#
     
     def timer_callback(self):
@@ -52,6 +87,14 @@ class TeleopNode(Node):
         self.robot_pose[0][0] = msg.x
         self.robot_pose[0][1] = msg.y
         self.robot_pose[0][2] = msg.theta
+
+        key = get_key(self.settings)
+        if key in KEY_BINDINGS:
+                linear, angular = KEY_BINDINGS[key]
+                self.send_velocity(linear, angular)
+        elif key == 'i':
+            self.spawn_pizza(msg.x, msg.y)
+        self.get_logger().info(f"{msg.x} and {msg.y}")
         
     #----------------------Service----------------------#
         
