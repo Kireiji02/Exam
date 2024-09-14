@@ -1,0 +1,11 @@
+source;share/exam/hook/cmake_prefix_path.ps1
+source;share/exam/hook/cmake_prefix_path.dsv
+source;share/exam/hook/cmake_prefix_path.sh
+source;share/exam/hook/pythonpath.ps1
+source;share/exam/hook/pythonpath.dsv
+source;share/exam/hook/pythonpath.sh
+source;share/exam/local_setup.bash
+source;share/exam/local_setup.dsv
+source;share/exam/local_setup.ps1
+source;share/exam/local_setup.sh
+source;share/exam/local_setup.zsh
