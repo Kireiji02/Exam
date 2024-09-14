@@ -15,7 +15,7 @@
   - Spawn Pizza Key: Use keyblind to drop the pizza which reffer by current postition
   - Save Path Key: Save the path from the pizza dropping position and store the data in yaml file.
   - Clear Pizza Key: Press to "eat" all the pizzas that haven't stored in yaml file (unsaved).
-    _For these special keyblinds are performed to send the "flag" to "Teleop Controller" to command along thier functionality_
+    -_For these special keyblinds are performed to send the "flag" to "Teleop Controller" to command along thier functionality_
 -  **Teleop Turtle Controller**: Receive the flag from Teleop Keyboard Interface to display the result.
     _Once the path is saved 4 times, The program won't allow you to save it more, but you still can move around or drop the pizza if it remains._
 -  **Param control RQT**: Can configure the parameters through **RQT** realtime such as controller gain
