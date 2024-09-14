@@ -47,8 +47,8 @@ class TeleopNode(Node):
         
         #---------------------Topics---------------------#
 
-        self.cmd_vel_pub = self.create_publisher(Twist, 'cmd_vel', 10)
-        self.create_subscription(Pose, 'pose', self.callback_pose, 10)
+        self.cmd_vel_pub = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
+        self.create_subscription(Pose, 'turtle1/pose', self.callback_pose, 10)
         
         #--------------------Services--------------------#
         
@@ -67,31 +67,18 @@ class TeleopNode(Node):
     #         data = yaml.safe_load(file)
     #         return data['targets']
         
-    #---------------------Key Publishers---------------------#
-
-    def send_velocity(self, linear, angular):
-        """
-        Publish the Twist message with the specified linear and angular velocities.
-        """
-        twist = Twist()
-        twist.linear.x = linear
-        twist.angular.z = angular
-        self.cmd_vel_pub.publish(twist)
 
     #---------------------Callback---------------------#
     
     def timer_callback(self):
-        self.spawn_pizza(5.5,5.5)
+        self.spawn_pizza(0.5,0.5)
         
     def callback_pose(self,msg):
-        self.robot_pose[0][0] = msg.x
-        self.robot_pose[0][1] = msg.y
-        self.robot_pose[0][2] = msg.theta
 
         key = get_key(self.settings)
         if key in KEY_BINDINGS:
-                linear, angular = KEY_BINDINGS[key]
-                self.send_velocity(linear, angular)
+                v, w = KEY_BINDINGS[key]
+                self.cmdvel(v, w)
         elif key == 'i':
             self.spawn_pizza(msg.x, msg.y)
         self.get_logger().info(f"{msg.x} and {msg.y}")
