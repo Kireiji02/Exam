@@ -20,6 +20,7 @@
 -  **Teleop Turtle Controller**: Receive the flag from Teleop Keyboard Interface to display the result.
     _Once the path is saved 4 times, The program won't allow you to save it more, but you still can move around or drop the pizza if it remains._
 -  **Param control RQT**: Can configure the parameters through **RQT** realtime such as controller gain
+-  **Copy Turtle**: Spawn 4 turtles with the specific name to complete thier mission
   
 
 ## **Installation**
@@ -49,3 +50,5 @@
    ```bash
    echo "source ~/your_workspace/install/setup.bash" >> ~/.bashrc
    ```
+## Usage
+- This package provides you only 1 launch file. Contains with `teleop_turtle.py` that control by keyboard input, `controller.py` use to diplay the output and compute the path, `copy_turtle` spawn 4 turtles to copy the path that was saved to yaml from `teleop_turtle` and distribute the position data to these turtles and `scheduler_node` is the node that be used to publish the state of `copy_turtle` that complete thier own mission and `controller_node` that show the status of itself (e.g pizza remaining, count of save, etc..)
