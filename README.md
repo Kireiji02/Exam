@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0e39ddd2-c82c-4bea-a1a9-234da0adbe76)# ROS2 Turtlesim+ Examination 1
+ROS2 Turtlesim+ Examination 1
 
 ## **Objective**
 - To study the functionality of ROS2 in the following areas: Topics, Services, Parameters, Namespaces, and Launch Files.
