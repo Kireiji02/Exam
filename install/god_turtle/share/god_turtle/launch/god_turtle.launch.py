@@ -39,7 +39,8 @@ def generate_launch_description():
         name='controller_node',
             parameters=[
                 {'name':teleop_namespace},
-                {'pizza_limit':50}
+                {'pizza_limit':50},
+                {'save_limit':4}
             ]
     )
     launch_description.add_action(controller_node)

@@ -26,14 +26,16 @@ class ControllerNode(Node):
         self.declare_parameter('pizza_limit',20)
         self.pizza_limit = self.get_parameter('pizza_limit').value
         
-        self.declare_parameter('name', '')
+        self.declare_parameter('name', 'turtle')
         self.name = self.get_parameter('name').get_parameter_value().string_value
+        
+        self.declare_parameter('save_limit', 4)
+        self.save_max = self.get_parameter('save_limit').value
         
         self.kp_d = 3.0
         self.kp_theta = 25
         self.turtle_pose = [0.0,0.0,0.0]
         self.save_count = 0 # number of pizza config saved (max at 4 times [0,1,2,3])
-        self.save_max = 4 # do param later -----------------------------------------------
         self.pizza_count = 1 # number of spawned pizzas
         self.remaining_pizza = 0 # Number of remaining pizzas
         # self.check_pizza_remain = 0 
@@ -72,7 +74,7 @@ class ControllerNode(Node):
         self.remaining_pizza = msg.data
 
     def timer_callback(self):
-        # self.get_logger().info(f'\n{self.pizza_count}\n{self.pizza_limit}')
+        # self.get_logger().info(f'\n{self.pizza_count}\n{self.remaining_pizza}')
         if len(self.clear_pizza[0]) > 0:
             delta_x = self.clear_pizza[0][0]-self.turtle_pose[0]
             delta_y = self.clear_pizza[1][0]-self.turtle_pose[1]
@@ -114,11 +116,12 @@ class ControllerNode(Node):
         # self.get_logger().info(self.save_count-1)
         if self.received_flag == 1 :
             if self.save_count < 4 :
-                if self.pizza_count <= self.pizza_limit:
+                if self.pizza_count < self.pizza_limit:
                     self.spawn_pizza(msg.x, msg.y)
-                    self.get_logger().info(f"\n Spawn pizza:: at X: {msg.x:.5f} Y: {msg.y:.5f} \n Remaining Pizza: {self.remaining_pizza-1}/{self.pizza_limit}")
+                    self.get_logger().info(f"\n Spawn pizza:: at X: {msg.x:.5f} Y: {msg.y:.5f} \n Remaining Pizza: {self.remaining_pizza}/{self.pizza_limit}")
 
         elif self.received_flag == 2 :
+            self.pizza_count += 1
             with  open('/home/kireiji/Documents/GitHub/Exam/src/god_turtle/yaml_files' + str(self.get_namespace()) + '_via_point.yaml', 'w') as file:
                 yaml.dump(self.save_pizza,file)
         
@@ -131,7 +134,7 @@ class ControllerNode(Node):
         elif self.received_flag == 3 :
             if self.save_count < 4:
                 if self.save_count >= 0 and self.save_count < 4 :
-                    self.get_logger().info(f'\n==================================\n       Cleared successfully\n==================================')
+                    self.get_logger().info(f'\n==================================\n             Clearing\n==================================')
                     
                     self.clear_pizza = self.save_pizza[self.save_count]
                     # self.get_logger().info(f'{self.clear_pizza}')
