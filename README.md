@@ -51,4 +51,15 @@
    echo "source ~/your_workspace/install/setup.bash" >> ~/.bashrc
    ```
 ## Usage
-- This package provides you only 1 launch file. Contains with `teleop_turtle.py` that control by keyboard input, `controller.py` use to diplay the output and compute the path, `copy_turtle` spawn 4 turtles to copy the path that was saved to yaml from `teleop_turtle` and distribute the position data to these turtles and `scheduler_node` is the node that be used to publish the state of `copy_turtle` that complete thier own mission and `controller_node` that show the status of itself (e.g pizza remaining, count of save, etc..)
+- This package provides you `teleop_turtle.py` that control by keyboard input and 1 launch file `god_turtle.lauunch.py`. Contains with  `controller.py` use to diplay the output and compute the path, `copy_turtle.py` spawn 4 turtles to copy the path that was saved to yaml from `teleop_turtle` and distribute the position data to these turtles and `scheduler_node.py` is the node that be used to publish the state of `copy_turtle.py` that complete thier own mission and `controller_node.py` that show the status of itself (e.g pizza remaining, count of save, etc..)
+
+  ### 1.) Launch the `god_turtle.lauunch.py`
+   ```bash
+   ros2 launch god_turtle god_turtle.lauunch.py
+   ```
+   ### 2.) Run the `teleop_turtle.py to control Teleop Turtle`
+   ```bash
+   ros2 run god_turtle teleop_turtle.py
+   
+   ```
+
