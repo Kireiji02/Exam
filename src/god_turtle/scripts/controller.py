@@ -78,7 +78,7 @@ class ControllerNode(Node):
             if self.pizza_count <= self.pizza_limit:
                 self.get_logger().info('kuy')
                 self.spawn_pizza(msg.x, msg.y)
-                self.get_logger().info(f"\n Spawn pizza:: at X: {msg.x:.5f} Y: {msg.y:.5f} \n Remaining Pizza: {self.remaining_pizza}")
+                self.get_logger().info(f"\n Spawn pizza:: at X: {msg.x:.5f} Y: {msg.y:.5f} \n Remaining Pizza: {self.remaining_pizza}/{self.pizza_limit}")
             self.received_flag = 0
     def callback_abs_cmd(self,msg):
         self.cmdvel(msg.linear.x,msg.angular.z)
