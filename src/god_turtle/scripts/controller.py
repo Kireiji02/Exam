@@ -76,7 +76,7 @@ class ControllerNode(Node):
             alpha = math.atan2(delta_y,delta_x)
             e_theta = alpha-self.turtle_pose[2]
 
-            if dist > 0.2:
+            if dist > 0.15:
                 if e_theta > math.pi:
                     e_theta -= 2*math.pi
                 elif e_theta < -math.pi:
@@ -89,9 +89,12 @@ class ControllerNode(Node):
                 vx = 0.0
                 w = 0.0
                 # self.get_logger().info("Turtle is at the pizza. Trying to eat...")
-                self.eat_pizza()
+                # self.eat_pizza()
                 # self.get_logger().info(f'{len(self.clear_pizza[0])}')
                 self.clear_pizza = [self.clear_pizza[0][1:],self.clear_pizza[1][1:]]
+                
+            if dist < 0.16:
+                self.eat_pizza()
                 
             self.cmdvel(vx, w)
                 
