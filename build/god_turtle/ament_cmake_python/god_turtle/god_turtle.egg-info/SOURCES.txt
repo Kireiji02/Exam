@@ -1,0 +1,7 @@
+setup.py
+god_turtle/__init__.py
+god_turtle/dummy_module.py
+god_turtle.egg-info/PKG-INFO
+god_turtle.egg-info/SOURCES.txt
+god_turtle.egg-info/dependency_links.txt
+god_turtle.egg-info/top_level.txt

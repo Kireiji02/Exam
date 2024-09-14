@@ -1,0 +1,20 @@
+[0.011s] Invoking command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/RoboticsDev_ws/install/launch_testing_examples:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_pointcloud_publisher:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_subscriber:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_service:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_publisher:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_client:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_action_server:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_action_client:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_guard_conditions:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_executors:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces -- -j16 -l16
+[0.044s] [  1%] Built target turtlesim_plus_interfaces__cpp
+[0.045s] [ 12%] Built target turtlesim_plus_interfaces__rosidl_generator_c
+[0.060s] [ 14%] Built target ament_cmake_python_copy_turtlesim_plus_interfaces
+[0.060s] [ 27%] Built target turtlesim_plus_interfaces__rosidl_typesupport_introspection_c
+[0.060s] [ 34%] Built target turtlesim_plus_interfaces__rosidl_typesupport_c
+[0.060s] [ 47%] Built target turtlesim_plus_interfaces__rosidl_typesupport_cpp
+[0.061s] [ 56%] Built target turtlesim_plus_interfaces__rosidl_typesupport_introspection_cpp
+[0.061s] [ 67%] Built target turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c
+[0.062s] [ 78%] Built target turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.075s] [ 78%] Built target turtlesim_plus_interfaces
+[0.089s] [ 80%] Built target turtlesim_plus_interfaces__py
+[0.106s] [ 89%] Built target turtlesim_plus_interfaces__rosidl_generator_py
+[0.122s] [100%] Built target turtlesim_plus_interfaces__rosidl_typesupport_c__pyext
+[0.123s] [100%] Built target turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[0.123s] [100%] Built target turtlesim_plus_interfaces__rosidl_typesupport_introspection_c__pyext
+[0.241s] running egg_info
+[0.244s] writing manifest file 'turtlesim_plus_interfaces.egg-info/SOURCES.txt'
+[0.263s] [100%] Built target ament_cmake_python_build_turtlesim_plus_interfaces_egg
+[0.270s] Invoked command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/RoboticsDev_ws/install/launch_testing_examples:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_pointcloud_publisher:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_subscriber:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_service:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_publisher:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_client:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_action_server:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_minimal_action_client:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_guard_conditions:/home/kireiji/RoboticsDev_ws/install/examples_rclpy_executors:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces -- -j16 -l16

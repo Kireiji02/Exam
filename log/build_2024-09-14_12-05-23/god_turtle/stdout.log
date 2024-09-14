@@ -1,0 +1,18 @@
+[100%] Built target cpp_node_test
+[100%] Built target ament_cmake_python_copy_god_turtle
+running egg_info
+writing manifest file 'god_turtle.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_god_turtle_egg
+-- Install configuration: ""
+-- Up-to-date: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/environment/pythonpath.sh
+-- Up-to-date: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/environment/pythonpath.dsv
+-- Up-to-date: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle-0.0.0-py3.10.egg-info
+-- Installing: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Installing: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Up-to-date: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle
+-- Up-to-date: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle/__init__.py
+-- Up-to-date: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle/dummy_module.py
+Listing '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages/god_turtle'...
+-- Up-to-date: /home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/god_turtle/dummy_script.py

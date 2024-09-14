@@ -1,0 +1,9 @@
+{
+  "package_name": "turtlesim_plus_interfaces",
+  "non_idl_tuples": [
+    "/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces:msg/ScannerData.msg",
+    "/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces:msg/ScannerDataArray.msg",
+    "/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces:srv/GivePosition.srv",
+    "/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces:action/GetData.action"
+  ]
+}
