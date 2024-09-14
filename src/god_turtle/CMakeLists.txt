@@ -30,6 +30,7 @@ install(PROGRAMS
   scripts/dummy_script.py
   scripts/teleop_turtle.py
   scripts/controller.py
+  scripts/copy_turtle.py
   DESTINATION lib/${PROJECT_NAME}
 )
 
