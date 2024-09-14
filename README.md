@@ -71,3 +71,7 @@ ROS2 Turtlesim+ Examination 1
    
    ```
   ![dclrprm](https://cdn.discordapp.com/attachments/1024674136758431752/1284656084103069726/image.png?ex=66e76cb6&is=66e61b36&hm=520fd17b7e996939c32fd0670ddd0232894338535e98cff2fa57d10175e3fee7&)
+
+  ## Authors
+  - Manasawin Anekvisudwong 65340500049
+  - Karanyaphas Chitsuebsai 65340500065
