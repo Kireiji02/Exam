@@ -38,7 +38,7 @@ class TeleopNode(Node):
             """
     ---------------- Turtle Teleop ---------------- 
 
-                        W
+                        W  
                     A   S   D
 
     W: Moving Forward (linear velocity = 3.0 m/s)
@@ -48,6 +48,7 @@ class TeleopNode(Node):
 
     I: Spawn Pizza accord to the current position 
     E: Save all the pizza positions 
+    C: Clear unsaved positions
 
     ------------------------------------------------
 
