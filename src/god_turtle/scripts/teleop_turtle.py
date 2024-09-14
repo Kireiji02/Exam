@@ -8,6 +8,7 @@ import termios
 import tty
 from rclpy.node import Node
 from geometry_msgs.msg import Twist
+from std_msgs.msg import Int64
 from turtlesim.msg import Pose
 from turtlesim_plus_interfaces.srv import GivePosition
 
@@ -33,6 +34,26 @@ class TeleopNode(Node):
     def __init__(self):
         super().__init__('teleop_node')
 
+        print(
+            """
+    ---------------- Turtle Teleop ---------------- 
+
+                        W
+                    A   S   D
+
+    W: Moving Forward (linear velocity = 3.0 m/s)
+    S: Moving Backward (linear velocity = -3.0 m/s)
+    D: Turn Right (angular velocity = 2.0 rad/s)
+    A: Turn Left (angular velocity = -2.0 rad/s)
+
+    I: Spawn Pizza accord to the current position 
+    E: Save all the pizza positions 
+
+    ------------------------------------------------
+
+        """
+        )
+
         #--------------------Keyblinds--------------------#
 
         self.settings = termios.tcgetattr(sys.stdin)
@@ -41,6 +62,11 @@ class TeleopNode(Node):
         
         self.declare_parameter('frequency', 10.0)   
         self.frequency = self.get_parameter('frequency').get_parameter_value().double_value
+        self.declare_parameter('pizza_limit',20)
+        self.set_pizza_limit = self.get_parameter('pizza_limit').value
+        self.pizza_count = 0
+        self.remaining_pizza = 0
+        self.check_pizza_remain = 0
         
         self.create_timer(1/self.frequency, self.timer_callback)
         # self.target_pos = self.loadYAML()
@@ -49,6 +75,8 @@ class TeleopNode(Node):
 
         self.cmd_vel_pub = self.create_publisher(Twist, 'turtle1/cmd_vel', 10)
         self.create_subscription(Pose, 'turtle1/pose', self.callback_pose, 10)
+        self.remaining_pizza_pub_ = self.create_publisher(Int64,'turtle1/pizza_count',10)
+        self.create_subscription(Int64, 'turtle1/pizza_count',self.pizza_count_callback,10)
         
         #--------------------Services--------------------#
         
@@ -67,12 +95,10 @@ class TeleopNode(Node):
     #         data = yaml.safe_load(file)
     #         return data['targets']
         
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
     #---------------------Callback---------------------#
-    
+    def pizza_count_callback(self,msg):
+        self.check_pizza_remain = msg.data
+
     def timer_callback(self):
         self.spawn_pizza(0.5,0.5)
         
@@ -80,16 +106,17 @@ class TeleopNode(Node):
 
         key = get_key(self.settings)
         if key in KEY_BINDINGS:
-<<<<<<< Updated upstream
-                v, w = KEY_BINDINGS[key]
-                self.cmdvel(v, w)
-=======
                 linear, angular = KEY_BINDINGS[key]
-                self.cmdvel(linear, angular)
->>>>>>> Stashed changes
+                self.send_velocity(linear, angular)
+
         elif key == 'i':
-            self.spawn_pizza(msg.x, msg.y)
-        self.get_logger().info(f"{msg.x} and {msg.y}")
+            self.pizza_limit = self.get_parameter('pizza_limit').value
+            if self.pizza_count <= self.pizza_limit:
+                self.call_spawn_pizza(msg.x, msg.y)
+                self.get_logger().info(f"\n Spawn pizza:: at X: {msg.x:.5f} Y: {msg.y:.5f} \n Remaining Pizza: {self.remaining_pizza}")
+                
+        elif key == "\x03" :
+            rclpy.shutdown()
         
     #----------------------Service----------------------#
         
@@ -99,7 +126,14 @@ class TeleopNode(Node):
         position_request = GivePosition.Request()
         position_request.x = x
         position_request.y = y
-        
+
+        self.pizza_count += 1
+        self.spawn_pizza_client.call_async(position_request)
+
+        self.remaining_pizza = self.pizza_limit - self.pizza_count
+        remaining = Int64()
+        remaining.data = self.pizza_limit - self.pizza_count
+
         data = {}
 
         with  open('/home/kireiji/Documents/GitHub/Exam/src/god_turtle/yaml_files' + str(self.get_namespace()) + '_via_point.yaml', 'w') as file:
