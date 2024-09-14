@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from god_turtle.dummy_module import dummy_function, dummy_var
+# from god_turtle.dummy_module import dummy_function, dummy_var
 import yaml
 import rclpy
 import sys
@@ -67,7 +67,10 @@ class TeleopNode(Node):
     #         data = yaml.safe_load(file)
     #         return data['targets']
         
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     #---------------------Callback---------------------#
     
     def timer_callback(self):
@@ -77,8 +80,13 @@ class TeleopNode(Node):
 
         key = get_key(self.settings)
         if key in KEY_BINDINGS:
+<<<<<<< Updated upstream
                 v, w = KEY_BINDINGS[key]
                 self.cmdvel(v, w)
+=======
+                linear, angular = KEY_BINDINGS[key]
+                self.cmdvel(linear, angular)
+>>>>>>> Stashed changes
         elif key == 'i':
             self.spawn_pizza(msg.x, msg.y)
         self.get_logger().info(f"{msg.x} and {msg.y}")
