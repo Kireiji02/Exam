@@ -1,6 +1,7 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
 import yaml
+from launch.actions import ExecuteProcess
 
 
 def loadYAML():
@@ -19,21 +20,51 @@ def get_turtle_positions(turtle_index):
 
 
 def generate_launch_description():
+    ns = 'copy_turtle'
     name_list = ['Foxy', 'Noetic', 'Humble', 'Iron']
     ld = LaunchDescription()
+
+    turtle_node = Node(
+        package='turtlesim_plus',
+        namespace=ns,
+        executable='turtlesim_plus_node.py',
+        name='turtle_node'
+    )
+    ld.add_action(turtle_node)
     
+    kill_turtle = ExecuteProcess(
+        cmd = [f"ros2 service call /{ns}/remove_turtle turtlesim/srv/Kill \"name: 'turtle1'\""],
+        shell = True
+    )
+    ld.add_action(kill_turtle)
+
+    for i in range(len(name_list)):
+        spawn_turtle = ExecuteProcess(
+            cmd = [
+                f"ros2 service call /{ns}/spawn_turtle turtlesim/srv/Spawn \"{{x: -1.0, y: -1.0, theta: 0.0, name: '/{name_list[i]}'}}\""
+            ],
+            shell = True
+        )
+        ld.add_action(spawn_turtle)
+
+
     for i in range(len(name_list)):
         positions_x, positions_y = get_turtle_positions(i)
         copy_turtle_node = Node(
             package='god_turtle',
-            namespace='',
+            namespace=name_list[i],
             executable='copy_turtle.py',  # No need for .py extension here
-            name=name_list[i],
+            name='copy_turtle',
             parameters=[
                 {'x_positions': positions_x},
-                {'y_positions': positions_y}
+                {'y_positions': positions_y},
+                {'get_namespace': ns}
             ]
         )
         ld.add_action(copy_turtle_node)
+
+    
+
+    
     
     return ld

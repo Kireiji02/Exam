@@ -72,6 +72,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/kireiji/Documents/GitHub/Exam/src/god_turtle/scripts/teleop_turtle.py"
     "/home/kireiji/Documents/GitHub/Exam/src/god_turtle/scripts/controller.py"
     "/home/kireiji/Documents/GitHub/Exam/src/god_turtle/scripts/copy_turtle.py"
+    "/home/kireiji/Documents/GitHub/Exam/src/god_turtle/scripts/scheduler.py"
     )
 endif()
 

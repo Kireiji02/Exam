@@ -31,6 +31,7 @@ install(PROGRAMS
   scripts/teleop_turtle.py
   scripts/controller.py
   scripts/copy_turtle.py
+  scripts/scheduler.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -5,7 +5,7 @@ from launch.actions import ExecuteProcess
 
 
 def loadYAML():
-    with open('/home/tim/turtlesim_mod/src/god_turtle/yaml_files/sang_via_point.yaml', 'r') as file:
+    with open('/home/kireiji/Documents/GitHub/Exam/src/god_turtle/yaml_files/sang_via_point.yaml', 'r') as file:
         data = yaml.safe_load(file)
     return data
 
