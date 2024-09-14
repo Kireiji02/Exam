@@ -57,7 +57,7 @@
    ```bash
    ros2 launch god_turtle god_turtle.lauunch.py
    ```
-   ### 2.) Run the `teleop_turtle.py to control Teleop Turtle`
+   ### 2.) Run the `teleop_turtle.py` to control Teleop Turtle
    ```bash
    ros2 run god_turtle teleop_turtle.py
    
