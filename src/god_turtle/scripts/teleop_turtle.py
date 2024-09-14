@@ -53,35 +53,26 @@ class TeleopNode(Node):
 
         """
         )
-
         #--------------------Keyblinds--------------------#
 
         self.settings = termios.tcgetattr(sys.stdin)
         
-        #--------------------Variables--------------------#
-        
-        self.declare_parameter('frequency', 10.0)   
-        self.frequency = self.get_parameter('frequency').value
-        self.declare_parameter('pizza_limit',20)
-        self.set_pizza_limit = self.get_parameter('pizza_limit').value
-        self.pizza_count = 0
-        self.remaining_pizza = 0
-        self.check_pizza_remain = 0
-        
+        self.frequency = 100.0
         self.create_timer(1/self.frequency, self.timer_callback)
         # self.target_pos = self.loadYAML()
         
         #---------------------Topics---------------------#
 
         self.cmd_vel_pub = self.create_publisher(Twist, '/cmd_vel', 10)
-        self.create_subscription(Pose, 'pose', self.callback_pose, 10)
-        self.remaining_pizza_pub_ = self.create_publisher(Int64,'pizza_count',10)
-        self.create_subscription(Int64, 'pizza_count',self.pizza_count_callback,10)
-        
-        #--------------------Services--------------------#
-        
-        self.spawn_pizza_client = self.create_client(GivePosition, '/spawn_pizza')
+        self.send_flag_req_pub = self.create_publisher(Int64,'/flag_req',10)
+        # self.create_subscription(Int64,'flag_res',10)
     
+    
+    def send_flag(self,flag):
+        msg = Int64()
+        msg.data = flag
+        self.send_flag_req_pub.publish(msg)
+        
     #---------------------Control---------------------#
 
     def cmdvel(self, v, w):
@@ -90,59 +81,17 @@ class TeleopNode(Node):
         msg.angular.z = w
         self.cmd_vel_pub.publish(msg)
         
-    # def loadYAML(self):
-    #     with open('/home/kireiji/RoboticsDev_ws/src/motorsim/via_point/via_point.yaml', 'r') as file:
-    #         data = yaml.safe_load(file)
-    #         return data['targets']
-        
-    #---------------------Callback---------------------#
-    def pizza_count_callback(self,msg):
-        self.check_pizza_remain = msg.data
-
     def timer_callback(self):
-        self.spawn_pizza(0.5,0.5)
-        
-    def callback_pose(self,msg):
-
         key = get_key(self.settings)
         if key in KEY_BINDINGS:
                 linear, angular = KEY_BINDINGS[key]
                 self.cmdvel(linear, angular)
+    
         elif key == 'i':
-            self.pizza_limit = self.get_parameter('pizza_limit').value
-            if self.pizza_count <= self.pizza_limit:
-                self.call_spawn_pizza(msg.x, msg.y)
-                self.get_logger().info(f"\n Spawn pizza:: at X: {msg.x:.5f} Y: {msg.y:.5f} \n Remaining Pizza: {self.remaining_pizza}")
+                self.send_flag(1)
                 
         elif key == "\x03" :
             rclpy.shutdown()
-        
-    #----------------------Service----------------------#
-        
-    def spawn_pizza(self, x, y):
-        while not self.spawn_pizza_client.wait_for_service(1.0):
-            self.get_logger().warn('Waiting for Server...')
-        position_request = GivePosition.Request()
-        position_request.x = x
-        position_request.y = y
-
-        self.pizza_count += 1
-        self.spawn_pizza_client.call_async(position_request)
-
-        self.remaining_pizza = self.pizza_limit - self.pizza_count
-        remaining = Int64()
-        remaining.data = self.pizza_limit - self.pizza_count
-
-        data = {}
-
-        with  open('/home/kireiji/Documents/GitHub/Exam/src/god_turtle/yaml_files' + str(self.get_namespace()) + '_via_point.yaml', 'w') as file:
-            yaml.dump({},file)
-            data = {'targets': [x, y]}
-            
-        with  open('/home/kireiji/Documents/GitHub/Exam/src/god_turtle/yaml_files' + str(self.get_namespace()) + '_via_point.yaml', 'w') as file:
-            yaml.dump(data,file)
-            
-        self.spawn_pizza_client.call_async(position_request)
     
 def main(args=None):
     rclpy.init(args=args)

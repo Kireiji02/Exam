@@ -70,6 +70,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/god_turtle" TYPE PROGRAM FILES
     "/home/kireiji/Documents/GitHub/Exam/src/god_turtle/scripts/dummy_script.py"
     "/home/kireiji/Documents/GitHub/Exam/src/god_turtle/scripts/teleop_turtle.py"
+    "/home/kireiji/Documents/GitHub/Exam/src/god_turtle/scripts/controller.py"
     )
 endif()
 

@@ -21,6 +21,8 @@ def generate_launch_description():
     )
     launch_description.add_action(kill_turtle)
     
+    #-----------------------------------------------------------------------------------#
+    
     spawn_turtle = ExecuteProcess(
         cmd = [
             f"ros2 service call /spawn_turtle turtlesim/srv/Spawn \"{{x: -1.0, y: -1.0, theta: 0.0, name: '{teleop_turtle_name}'}}\""
@@ -28,5 +30,13 @@ def generate_launch_description():
         shell = True
     )
     launch_description.add_action(spawn_turtle)
+    
+    controller_node = Node(
+        package='god_turtle',
+        namespace='',
+        executable='controller.py',
+        name='controller_node'
+    )
+    launch_description.add_action(controller_node)
     
     return launch_description
