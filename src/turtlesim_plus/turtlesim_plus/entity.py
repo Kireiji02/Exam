@@ -123,7 +123,7 @@ def draw_polygon_alpha(surface, color, points):
     pygame.draw.polygon(shape_surf, color, [(x - min_x, y - min_y) for x, y in points])
     surface.blit(shape_surf, target_rect)
 class Scanner():
-    def __init__(self, radius:float=0.6,range:float=math.pi*2,color=(255,0,0,127)):
+    def __init__(self, radius:float=4.0,range:float=math.pi/3,color=(255,0,0,127)):
         self.radius = radius
         self.range = range # 
         self.detection_types = []
@@ -185,7 +185,7 @@ class TurtleEatInterface(PhysicsEntity,GraphicsEntity):
     def __init__(self, turtle:Turtle):
         PhysicsEntity.__init__(self,name=turtle.name)
         self.turtle = turtle
-        self.eat_range = Scanner(radius=0.45,range=math.pi*2,color=(0,255,0,127))
+        self.eat_range = Scanner(radius=2.0,range=math.pi/3,color=(0,255,0,127))
         self.eat_range.add_detection_type(Pizza)
         self.edibles = []
     def set_pose(self, pose: List[float]):
@@ -249,7 +249,6 @@ class GUI(EntityManager):
         self.image_dir = os.path.join(module_dir,'image')
         self.turtle_images  = os.listdir(os.path.join(self.image_dir,'turtle'))
         self.available_images = self.turtle_images.copy()
-        print(self.available_images)
         self.entity_order = [Pizza,TurtleScannerInterface]
     def update(self,mouse_callback:Callable):
         for event in pygame.event.get():

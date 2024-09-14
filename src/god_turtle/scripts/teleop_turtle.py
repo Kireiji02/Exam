@@ -92,6 +92,9 @@ class TeleopNode(Node):
                 
         elif key == 'e':
             self.send_flag(2)
+            
+        elif key == 'c':
+            self.send_flag(3)
                 
         elif key == "\x03" :
             rclpy.shutdown()

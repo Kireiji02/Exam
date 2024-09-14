@@ -1,7 +1,0 @@
-setup.py
-teleop_turtle/__init__.py
-teleop_turtle/dummy_module.py
-teleop_turtle.egg-info/PKG-INFO
-teleop_turtle.egg-info/SOURCES.txt
-teleop_turtle.egg-info/dependency_links.txt
-teleop_turtle.egg-info/top_level.txt
