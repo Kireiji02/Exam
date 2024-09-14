@@ -92,6 +92,7 @@ class ControllerNode(Node):
                 # self.eat_pizza()
                 # self.get_logger().info(f'{len(self.clear_pizza[0])}')
                 self.clear_pizza = [self.clear_pizza[0][1:],self.clear_pizza[1][1:]]
+                self.pizza_count -= 1
                 
             if dist < 0.16:
                 self.eat_pizza()
@@ -110,7 +111,7 @@ class ControllerNode(Node):
         if self.received_flag == 1 :
             if self.pizza_count <= self.pizza_limit:
                 self.spawn_pizza(msg.x, msg.y)
-                self.get_logger().info(f"\n Spawn pizza:: at X: {msg.x:.5f} Y: {msg.y:.5f} \n Remaining Pizza: {self.remaining_pizza}/{self.pizza_limit}")
+                self.get_logger().info(f"\n Spawn pizza:: at X: {msg.x:.5f} Y: {msg.y:.5f} \n Remaining Pizza: {self.remaining_pizza-1}/{self.pizza_limit}")
 
         elif self.received_flag == 2 :
             with  open('/home/kireiji/Documents/GitHub/Exam/src/god_turtle/yaml_files' + str(self.get_namespace()) + '_via_point.yaml', 'w') as file:
