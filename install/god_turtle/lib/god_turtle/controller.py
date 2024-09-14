@@ -21,6 +21,9 @@ class ControllerNode(Node):
         
         #--------------------Variables--------------------#
         
+        def create_nested_list(n):
+            return [[[], []] for _ in range(n)]
+        
         # self.declare_parameter('frequency', 100.0)   
         # self.frequency = self.get_parameter('frequency').value
         self.declare_parameter('pizza_limit',20)
@@ -38,9 +41,8 @@ class ControllerNode(Node):
         self.save_count = 0 # number of pizza config saved (max at 4 times [0,1,2,3])
         self.pizza_count = 1 # number of spawned pizzas
         self.remaining_pizza = 0 # Number of remaining pizzas
-        # self.check_pizza_remain = 0 
         self.received_flag = 0 # Recieve action keys
-        self.save_pizza = [[[],[]],[[],[]],[[],[]],[[],[]]] #fix hard code----------------
+        self.save_pizza = create_nested_list(self.save_max) # List for pizza spawn points
         self.clear_pizza = [[0.0],[0.0]] # Clear all unsaved pizzas present in the workspace by eating
         
         #---------------------Topics---------------------#
@@ -94,9 +96,6 @@ class ControllerNode(Node):
             else:
                 vx = 0.0
                 w = 0.0
-                # self.get_logger().info("Turtle is at the pizza. Trying to eat...")
-                # self.eat_pizza()
-                # self.get_logger().info(f'{len(self.clear_pizza[0])}')
                 self.clear_pizza = [self.clear_pizza[0][1:],self.clear_pizza[1][1:]]
                 self.pizza_count -= 1
                 
@@ -113,7 +112,6 @@ class ControllerNode(Node):
         self.turtle_pose[2] = msg.theta
         
         self.pizza_limit = self.get_parameter('pizza_limit').value
-        # self.get_logger().info(self.save_count-1)
         if self.received_flag == 1 :
             if self.save_count < 4 :
                 if self.pizza_count < self.pizza_limit:
@@ -137,7 +135,6 @@ class ControllerNode(Node):
                     self.get_logger().info(f'\n==================================\n             Clearing\n==================================')
                     
                     self.clear_pizza = self.save_pizza[self.save_count]
-                    # self.get_logger().info(f'{self.clear_pizza}')
                     
                 self.save_pizza[self.save_count] = [[],[]]
         
