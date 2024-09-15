@@ -22,6 +22,9 @@ ROS2 Turtlesim+ Examination 1
 -  **Param control RQT**: Can configure the parameters through **RQT** realtime such as controller gain
 -  **Copy Turtle**: Spawn 4 turtles with the specific name to complete thier mission
   
+## **System Architecture**
+![archsys](https://cdn.discordapp.com/attachments/1036539347777900635/1284673944120590377/Exam.pdf?ex=66e77d58&is=66e62bd8&hm=b0bdabed86211c65e43a3741675c66564f75986e24d3485e62719a2ef6db9109&)
+
 
 ## **Installation**
 
