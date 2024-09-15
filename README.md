@@ -1,4 +1,4 @@
-# ROS2 Turtlesim+ Examination 1
+ROS2 Turtlesim+ Examination 1
 
 ## **Objective**
 - To study the functionality of ROS2 in the following areas: Topics, Services, Parameters, Namespaces, and Launch Files.
@@ -20,6 +20,7 @@
 -  **Teleop Turtle Controller**: Receive the flag from Teleop Keyboard Interface to display the result.
     _Once the path is saved 4 times, The program won't allow you to save it more, but you still can move around or drop the pizza if it remains._
 -  **Param control RQT**: Can configure the parameters through **RQT** realtime such as controller gain
+-  **Copy Turtle**: Spawn 4 turtles with the specific name to complete thier mission
   
 
 ## **Installation**
@@ -49,3 +50,28 @@
    ```bash
    echo "source ~/your_workspace/install/setup.bash" >> ~/.bashrc
    ```
+## Usage
+- This package provides you `teleop_turtle.py` that control by keyboard input and 1 launch file `god_turtle.lauunch.py`. Contains with  `controller.py` use to diplay the output and compute the path, `copy_turtle.py` spawn 4 turtles to copy the path that was saved to yaml from `teleop_turtle` and distribute the position data to these turtles and `scheduler_node.py` is the node that be used to publish the state of `copy_turtle.py` that complete thier own mission and `controller_node.py` that show the status of itself (e.g pizza remaining, count of save, etc..)
+
+  ### 1.) Launch the `god_turtle.lauunch.py`
+   ```bash
+   ros2 launch god_turtle god_turtle.lauunch.py
+   ```
+   ### 2.) Run the `teleop_turtle.py` to control Teleop Turtle
+   ```bash
+   ros2 run god_turtle teleop_turtle.py
+   
+   ```
+   ![teleopinterface](https://cdn.discordapp.com/attachments/1024674136758431752/1284653235877056543/image.png?ex=66e76a0f&is=66e6188f&hm=e0fd3f2f76b81f614ae65281782b43b9eec0a6f1478940a08d249cb4ce99a02c&)
+  ![teleopturtle](https://cdn.discordapp.com/attachments/1024674136758431752/1284654197471449229/image.png?ex=66e76af4&is=66e61974&hm=fb5cb29c398c88b7ff0a335a06185ccc4178b5531522ffeefc730841d327e92a&)
+
+  ### 3.) Parameter Configuration
+  ```bash
+   rqt
+   
+   ```
+  ![dclrprm](https://cdn.discordapp.com/attachments/1024674136758431752/1284656084103069726/image.png?ex=66e76cb6&is=66e61b36&hm=520fd17b7e996939c32fd0670ddd0232894338535e98cff2fa57d10175e3fee7&)
+
+  ## Authors
+  - Manasawin Anekvisudwong 65340500049
+  - Karanyaphas Chitsuebsai 65340500065
