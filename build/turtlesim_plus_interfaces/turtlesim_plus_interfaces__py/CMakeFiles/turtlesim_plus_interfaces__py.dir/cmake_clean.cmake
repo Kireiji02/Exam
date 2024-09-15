@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/turtlesim_plus_interfaces/srv/__init__.py"
   "../rosidl_generator_py/turtlesim_plus_interfaces/srv/_give_position.py"
   "../rosidl_generator_py/turtlesim_plus_interfaces/srv/_give_position_s.c"
+  "../rosidl_generator_py/turtlesim_plus_interfaces/srv/_yaml_req.py"
+  "../rosidl_generator_py/turtlesim_plus_interfaces/srv/_yaml_req_s.c"
   "CMakeFiles/turtlesim_plus_interfaces__py"
 )
 

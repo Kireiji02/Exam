@@ -2,3 +2,4 @@
 /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:msg/ScannerDataArray.idl
 /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:srv/GivePosition.idl
 /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:action/GetData.idl
+/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:srv/YamlReq.idl

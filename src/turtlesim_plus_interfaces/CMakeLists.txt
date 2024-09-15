@@ -29,5 +29,6 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ScannerDataArray.msg"
   "srv/GivePosition.srv"
   "action/GetData.action"
+  "srv/YamlReq.srv"
 )
 ament_package()

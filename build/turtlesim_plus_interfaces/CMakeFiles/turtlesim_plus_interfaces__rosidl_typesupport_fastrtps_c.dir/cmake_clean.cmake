@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data_array__type_support_c.cpp.o.d"
   "CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/give_position__type_support_c.cpp.o"
   "CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/give_position__type_support_c.cpp.o.d"
+  "CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o"
+  "CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o.d"
   "libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.pdb"
   "libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so"
   "rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__rosidl_typesupport_fastrtps_c.h"
@@ -17,6 +19,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data_array__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/give_position__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/give_position__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

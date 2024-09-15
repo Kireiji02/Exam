@@ -6,7 +6,8 @@
     "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:msg/ScannerData.idl",
     "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:msg/ScannerDataArray.idl",
     "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:srv/GivePosition.idl",
-    "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:action/GetData.idl"
+    "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:action/GetData.idl",
+    "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces:srv/YamlReq.idl"
   ],
   "ros_interface_dependencies": [
     "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
@@ -28,6 +29,7 @@
     "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces/msg/ScannerDataArray.idl",
     "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces/srv/GivePosition.idl",
     "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces/action/GetData.idl",
+    "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces/srv/YamlReq.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
     "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",

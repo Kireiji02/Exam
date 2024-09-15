@@ -1,0 +1,304 @@
+[0.067s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.067s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x70327e351600>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x70327e3510f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x70327e3510f0>>)
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.165s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.165s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kireiji/Documents/GitHub/Exam'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/god_turtle) by extension 'ros'
+[0.182s] DEBUG:colcon.colcon_core.package_identification:Package 'src/god_turtle' with type 'ros.ament_cmake' and name 'god_turtle'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extensions ['ignore', 'ignore_ament_install']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extension 'ignore'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extension 'colcon_pkg'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extensions ['colcon_meta']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extension 'colcon_meta'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extensions ['ros']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlesim_plus' with type 'ros.ament_cmake' and name 'turtlesim_plus'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extension 'ignore'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extension 'ignore_ament_install'
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extensions ['colcon_pkg']
+[0.183s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlesim_plus_interfaces) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlesim_plus_interfaces' with type 'ros.ament_cmake' and name 'turtlesim_plus_interfaces'
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.184s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.196s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/kireiji/Documents/GitHub/Exam/install
+[0.196s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/kireiji/ros2_ws/install
+[0.197s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/kireiji/advRobotics_ws/install
+[0.197s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/kireiji/FRA501_WS/install
+[0.198s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 271 installed packages in /opt/ros/humble
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'cmake_target' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'cmake_clean_cache' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'cmake_clean_first' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'cmake_force_configure' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'ament_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'catkin_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'god_turtle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.226s] DEBUG:colcon.colcon_core.verb:Building package 'god_turtle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kireiji/Documents/GitHub/Exam/build/god_turtle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kireiji/Documents/GitHub/Exam/install/god_turtle', 'merge_install': False, 'path': '/home/kireiji/Documents/GitHub/Exam/src/god_turtle', 'symlink_install': False, 'test_result_base': None}
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'cmake_target' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'cmake_clean_cache' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'cmake_clean_first' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'cmake_force_configure' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'ament_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'catkin_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.226s] DEBUG:colcon.colcon_core.verb:Building package 'turtlesim_plus' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus', 'merge_install': False, 'path': '/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus', 'symlink_install': False, 'test_result_base': None}
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.226s] Level 5:colcon.colcon_core.verb:set package 'turtlesim_plus_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.226s] DEBUG:colcon.colcon_core.verb:Building package 'turtlesim_plus_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces', 'merge_install': False, 'path': '/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.226s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.227s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.227s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kireiji/Documents/GitHub/Exam/src/god_turtle' with build type 'ament_cmake'
+[0.227s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kireiji/Documents/GitHub/Exam/src/god_turtle'
+[0.228s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.229s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.229s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.231s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus' with build type 'ament_cmake'
+[0.231s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus'
+[0.231s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.231s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.234s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces' with build type 'ament_cmake'
+[0.234s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces'
+[0.234s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.234s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.239s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kireiji/Documents/GitHub/Exam/build/god_turtle': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/kireiji/Documents/GitHub/Exam/build/god_turtle -- -j16 -l16
+[0.241s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus -- -j16 -l16
+[0.243s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces -- -j16 -l16
+[0.460s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus -- -j16 -l16
+[0.466s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kireiji/Documents/GitHub/Exam/build/god_turtle' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/kireiji/Documents/GitHub/Exam/build/god_turtle -- -j16 -l16
+[0.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus
+[0.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces -- -j16 -l16
+[0.482s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kireiji/Documents/GitHub/Exam/build/god_turtle': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/kireiji/Documents/GitHub/Exam/build/god_turtle
+[0.514s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlesim_plus)
+[0.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus' for CMake module files
+[0.517s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus' for CMake config files
+[0.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus', 'cmake_prefix_path')
+[0.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/cmake_prefix_path.ps1'
+[0.518s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/cmake_prefix_path.dsv'
+[0.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/cmake_prefix_path.sh'
+[0.519s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/lib'
+[0.519s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/bin'
+[0.519s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/lib/pkgconfig/turtlesim_plus.pc'
+[0.519s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/lib/python3.10/site-packages'
+[0.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus', 'pythonpath')
+[0.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/pythonpath.ps1'
+[0.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/pythonpath.dsv'
+[0.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/pythonpath.sh'
+[0.520s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/bin'
+[0.520s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.ps1'
+[0.521s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.dsv'
+[0.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.sh'
+[0.521s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.bash'
+[0.522s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.zsh'
+[0.522s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/colcon-core/packages/turtlesim_plus)
+[0.523s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(god_turtle)
+[0.523s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle' for CMake module files
+[0.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kireiji/Documents/GitHub/Exam/build/god_turtle' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/kireiji/Documents/GitHub/Exam/build/god_turtle
+[0.524s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle' for CMake config files
+[0.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('god_turtle', 'cmake_prefix_path')
+[0.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/cmake_prefix_path.ps1'
+[0.524s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/cmake_prefix_path.dsv'
+[0.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/cmake_prefix_path.sh'
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib'
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/bin'
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/pkgconfig/god_turtle.pc'
+[0.525s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages'
+[0.525s] Level 1:colcon.colcon_core.shell:create_environment_hook('god_turtle', 'pythonpath')
+[0.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/pythonpath.ps1'
+[0.525s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/pythonpath.dsv'
+[0.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/pythonpath.sh'
+[0.526s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/bin'
+[0.526s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.ps1'
+[0.526s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.dsv'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.sh'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.bash'
+[0.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.zsh'
+[0.527s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/colcon-core/packages/god_turtle)
+[0.536s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlesim_plus)
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus' for CMake module files
+[0.536s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus' for CMake config files
+[0.537s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus', 'cmake_prefix_path')
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/cmake_prefix_path.ps1'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/cmake_prefix_path.dsv'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/cmake_prefix_path.sh'
+[0.537s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/lib'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/bin'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/lib/pkgconfig/turtlesim_plus.pc'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/lib/python3.10/site-packages'
+[0.538s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus', 'pythonpath')
+[0.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/pythonpath.ps1'
+[0.538s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/pythonpath.dsv'
+[0.538s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/hook/pythonpath.sh'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/bin'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.ps1'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.dsv'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.sh'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.bash'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/turtlesim_plus/package.zsh'
+[0.540s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus/share/colcon-core/packages/turtlesim_plus)
+[0.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(god_turtle)
+[0.543s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle' for CMake module files
+[0.543s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle' for CMake config files
+[0.544s] Level 1:colcon.colcon_core.shell:create_environment_hook('god_turtle', 'cmake_prefix_path')
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/cmake_prefix_path.ps1'
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/cmake_prefix_path.dsv'
+[0.544s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/cmake_prefix_path.sh'
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib'
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/bin'
+[0.544s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/pkgconfig/god_turtle.pc'
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/lib/python3.10/site-packages'
+[0.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('god_turtle', 'pythonpath')
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/pythonpath.ps1'
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/pythonpath.dsv'
+[0.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/hook/pythonpath.sh'
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/bin'
+[0.545s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.ps1'
+[0.546s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.dsv'
+[0.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.sh'
+[0.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.bash'
+[0.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/god_turtle/package.zsh'
+[0.547s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kireiji/Documents/GitHub/Exam/install/god_turtle/share/colcon-core/packages/god_turtle)
+[0.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces
+[0.588s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlesim_plus_interfaces)
+[0.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kireiji/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces
+[0.589s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces' for CMake module files
+[0.590s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces' for CMake config files
+[0.590s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus_interfaces', 'cmake_prefix_path')
+[0.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/cmake_prefix_path.ps1'
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/cmake_prefix_path.dsv'
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/cmake_prefix_path.sh'
+[0.591s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/lib'
+[0.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus_interfaces', 'ld_library_path_lib')
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/ld_library_path_lib.ps1'
+[0.591s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/ld_library_path_lib.dsv'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/ld_library_path_lib.sh'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/bin'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/lib/pkgconfig/turtlesim_plus_interfaces.pc'
+[0.592s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/lib/python3.10/site-packages'
+[0.592s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus_interfaces', 'pythonpath')
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/pythonpath.ps1'
+[0.592s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/pythonpath.dsv'
+[0.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/pythonpath.sh'
+[0.593s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/bin'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.ps1'
+[0.593s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.dsv'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.sh'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.bash'
+[0.594s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.zsh'
+[0.594s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/colcon-core/packages/turtlesim_plus_interfaces)
+[0.688s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlesim_plus_interfaces)
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces' for CMake module files
+[0.689s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces' for CMake config files
+[0.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus_interfaces', 'cmake_prefix_path')
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/cmake_prefix_path.ps1'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/cmake_prefix_path.dsv'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/cmake_prefix_path.sh'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/lib'
+[0.692s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus_interfaces', 'ld_library_path_lib')
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/ld_library_path_lib.ps1'
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/ld_library_path_lib.dsv'
+[0.692s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/ld_library_path_lib.sh'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/bin'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/lib/pkgconfig/turtlesim_plus_interfaces.pc'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/lib/python3.10/site-packages'
+[0.693s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlesim_plus_interfaces', 'pythonpath')
+[0.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/pythonpath.ps1'
+[0.693s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/pythonpath.dsv'
+[0.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/hook/pythonpath.sh'
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/bin'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.ps1'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.dsv'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.sh'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.bash'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/turtlesim_plus_interfaces/package.zsh'
+[0.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kireiji/Documents/GitHub/Exam/install/turtlesim_plus_interfaces/share/colcon-core/packages/turtlesim_plus_interfaces)
+[0.697s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[0.700s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[0.700s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[0.700s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[0.706s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[0.706s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[0.706s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[0.724s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[0.724s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kireiji/Documents/GitHub/Exam/install/local_setup.ps1'
+[0.725s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kireiji/Documents/GitHub/Exam/install/_local_setup_util_ps1.py'
+[0.727s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kireiji/Documents/GitHub/Exam/install/setup.ps1'
+[0.728s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kireiji/Documents/GitHub/Exam/install/local_setup.sh'
+[0.729s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kireiji/Documents/GitHub/Exam/install/_local_setup_util_sh.py'
+[0.729s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kireiji/Documents/GitHub/Exam/install/setup.sh'
+[0.730s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kireiji/Documents/GitHub/Exam/install/local_setup.bash'
+[0.731s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kireiji/Documents/GitHub/Exam/install/setup.bash'
+[0.731s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kireiji/Documents/GitHub/Exam/install/local_setup.zsh'
+[0.732s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kireiji/Documents/GitHub/Exam/install/setup.zsh'

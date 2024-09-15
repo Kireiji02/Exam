@@ -82,6 +82,10 @@ CMakeFiles/turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_i
 CMakeFiles/turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/action/detail/get_data__builder.hpp
 CMakeFiles/turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/action/detail/get_data__struct.hpp
 CMakeFiles/turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/action/detail/get_data__traits.hpp
+CMakeFiles/turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/yaml_req.hpp
+CMakeFiles/turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__builder.hpp
+CMakeFiles/turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.hpp
+CMakeFiles/turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__traits.hpp
 
 rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -102,6 +106,7 @@ rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: rosidl_adap
 rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: rosidl_adapter/turtlesim_plus_interfaces/msg/ScannerDataArray.idl
 rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: rosidl_adapter/turtlesim_plus_interfaces/srv/GivePosition.idl
 rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: rosidl_adapter/turtlesim_plus_interfaces/action/GetData.idl
+rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: rosidl_adapter/turtlesim_plus_interfaces/srv/YamlReq.idl
 rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -157,6 +162,18 @@ rosidl_generator_cpp/turtlesim_plus_interfaces/action/detail/get_data__struct.hp
 rosidl_generator_cpp/turtlesim_plus_interfaces/action/detail/get_data__traits.hpp: rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_plus_interfaces/action/detail/get_data__traits.hpp
 
+rosidl_generator_cpp/turtlesim_plus_interfaces/srv/yaml_req.hpp: rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_plus_interfaces/srv/yaml_req.hpp
+
+rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__builder.hpp: rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__builder.hpp
+
+rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.hpp: rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.hpp
+
+rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__traits.hpp: rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__traits.hpp
+
 turtlesim_plus_interfaces__cpp: CMakeFiles/turtlesim_plus_interfaces__cpp
 turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/action/detail/get_data__builder.hpp
 turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/action/detail/get_data__struct.hpp
@@ -173,7 +190,11 @@ turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/m
 turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__builder.hpp
 turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__struct.hpp
 turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__traits.hpp
+turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__builder.hpp
+turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.hpp
+turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__traits.hpp
 turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/give_position.hpp
+turtlesim_plus_interfaces__cpp: rosidl_generator_cpp/turtlesim_plus_interfaces/srv/yaml_req.hpp
 turtlesim_plus_interfaces__cpp: CMakeFiles/turtlesim_plus_interfaces__cpp.dir/build.make
 .PHONY : turtlesim_plus_interfaces__cpp
 

@@ -372,6 +372,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_plus_interfaces/srv" TYPE FILE FILES "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_adapter/turtlesim_plus_interfaces/srv/YamlReq.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_plus_interfaces/msg" TYPE FILE FILES "/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces/msg/ScannerData.msg")
 endif()
 
@@ -393,6 +397,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_plus_interfaces/action" TYPE FILE FILES "/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces/action/GetData.action")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_plus_interfaces/srv" TYPE FILE FILES "/home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces/srv/YamlReq.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_plus_interfaces/srv" TYPE FILE FILES "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_cmake/srv/YamlReq_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlesim_plus_interfaces/srv" TYPE FILE FILES "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_cmake/srv/YamlReq_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

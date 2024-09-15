@@ -68,19 +68,13 @@ def generate_launch_description():
             parameters=[
                 {'name':teleop_namespace},
                 {'pizza_limit':50},
-                {'save_limit':4}
+                {'save_limit':4},
+                {'kp_d': 3.0},
+                {'kp_theta': 25.0}
             ]
     )
     launch_description.add_action(controller_node)
     
-
-    turtle_copy_node = Node(
-        package='turtlesim_plus',
-        namespace=copy_namespace,
-        executable='turtlesim_plus_node.py',
-        name='turtle_node'
-    )
-    launch_description.add_action(turtle_copy_node)
     
     kill_turtle_copy = ExecuteProcess(
         cmd = [f"ros2 service call /{copy_namespace}/remove_turtle turtlesim/srv/Kill \"name: 'turtle1'\""],
@@ -99,19 +93,29 @@ def generate_launch_description():
 
 
     for i in range(len(name_list)):
-        positions_x, positions_y = get_turtle_positions(i)
+        # positions_x, positions_y = get_turtle_positions(i)
         copy_turtle_node = Node(
             package='god_turtle',
             namespace=name_list[i],
             executable='copy_turtle.py',  # No need for .py extension here
             name='copy_turtle',
             parameters=[
-                {'x_positions': positions_x},
-                {'y_positions': positions_y},
-                {'get_namespace': copy_namespace}
+                # {'x_positions': positions_x},
+                # {'y_positions': positions_y},
+                {'get_namespace': copy_namespace},
+                {'kp_d': 3.0},
+                {'kp_theta': 5.5}
             ]
         )
         launch_description.add_action(copy_turtle_node)
+        
+    turtle_copy_node = Node(
+        package='turtlesim_plus',
+        namespace=copy_namespace,
+        executable='turtlesim_plus_node.py',
+        name='turtle_node'
+    )
+    launch_description.add_action(turtle_copy_node)
         
     
     return launch_description

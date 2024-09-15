@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from turtlesim_plus_interfaces/srv/YamlReq.srv
+// generated code does not contain a copyright notice
+
+
+module turtlesim_plus_interfaces {
+  module srv {
+    struct YamlReq_Request {
+      boolean req;
+    };
+    struct YamlReq_Response {
+      boolean res;
+    };
+  };
+};

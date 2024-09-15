@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data_array__functions.c.o.d"
   "CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__functions.c.o"
   "CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__functions.c.o.d"
+  "CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o"
+  "CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o.d"
   "libturtlesim_plus_interfaces__rosidl_generator_c.pdb"
   "libturtlesim_plus_interfaces__rosidl_generator_c.so"
   "rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c"
@@ -28,7 +30,12 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__functions.h"
   "rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__struct.h"
   "rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__type_support.h"
+  "rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c"
+  "rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.h"
+  "rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.h"
+  "rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support.h"
   "rosidl_generator_c/turtlesim_plus_interfaces/srv/give_position.h"
+  "rosidl_generator_c/turtlesim_plus_interfaces/srv/yaml_req.h"
 )
 
 # Per-language clean rules from dependency scanning.

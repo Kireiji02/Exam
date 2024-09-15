@@ -48,23 +48,35 @@ def generate_launch_description():
         ld.add_action(spawn_turtle)
 
 
-    for i in range(len(name_list)):
-        positions_x, positions_y = get_turtle_positions(i)
-        copy_turtle_node = Node(
-            package='god_turtle',
-            namespace=name_list[i],
-            executable='copy_turtle.py',  # No need for .py extension here
-            name='copy_turtle',
-            parameters=[
-                {'x_positions': positions_x},
-                {'y_positions': positions_y},
-                {'get_namespace': ns}
-            ]
-        )
-        ld.add_action(copy_turtle_node)
+    # for i in range(len(name_list)):
+    #     positions_x, positions_y = get_turtle_positions(i)
+    #     copy_turtle_node = Node(
+    #         package='god_turtle',
+    #         namespace=name_list[i],
+    #         executable='copy_turtle.py',  # No need for .py extension here
+    #         name='copy_turtle',
+    #         parameters=[
+    #             {'x_positions': positions_x},
+    #             {'y_positions': positions_y},
+    #             {'get_namespace': ns},
+    #             {'kp_d': 3.0},
+    #             {'kp_theta': 5.5}
+    #         ]
+    #     )
+    #     ld.add_action(copy_turtle_node)
+        for i in range(len(name_list)):    
+            copy_turtle_node = Node(
+                package='god_turtle',
+                namespace=name_list[i],
+                executable='copy_turtle.py',  # No need for .py extension here
+                name='copy_turtle',
+                parameters=[
+                    {'get_namespace': ns},
+                    {'kp_d': 3.0},
+                    {'kp_theta': 5.5}
+                ]
+            )
+            ld.add_action(copy_turtle_node)
 
-    
-
-    
     
     return ld

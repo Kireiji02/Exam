@@ -26,7 +26,11 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__builder.hpp" "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp"
   "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__struct.hpp" "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp"
   "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__traits.hpp" "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp"
+  "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__builder.hpp" "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp"
+  "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.hpp" "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp"
+  "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__traits.hpp" "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp"
   "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/srv/give_position.hpp" "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp"
+  "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/srv/yaml_req.hpp" "/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_cpp/turtlesim_plus_interfaces/msg/scanner_data.hpp"
   )
 
 

@@ -15,7 +15,11 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__builder.hpp"
   "rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__struct.hpp"
   "rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/give_position__traits.hpp"
+  "rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__builder.hpp"
+  "rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.hpp"
+  "rosidl_generator_cpp/turtlesim_plus_interfaces/srv/detail/yaml_req__traits.hpp"
   "rosidl_generator_cpp/turtlesim_plus_interfaces/srv/give_position.hpp"
+  "rosidl_generator_cpp/turtlesim_plus_interfaces/srv/yaml_req.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

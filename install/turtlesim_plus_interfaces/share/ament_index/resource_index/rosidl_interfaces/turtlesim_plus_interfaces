@@ -8,3 +8,7 @@ srv/GivePosition.idl
 srv/GivePosition.srv
 srv/GivePosition_Request.msg
 srv/GivePosition_Response.msg
+srv/YamlReq.idl
+srv/YamlReq.srv
+srv/YamlReq_Request.msg
+srv/YamlReq_Response.msg

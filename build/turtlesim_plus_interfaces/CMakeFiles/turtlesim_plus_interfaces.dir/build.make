@@ -72,6 +72,9 @@ CMakeFiles/turtlesim_plus_interfaces: /home/kireiji/Documents/GitHub/Exam/src/tu
 CMakeFiles/turtlesim_plus_interfaces: rosidl_cmake/srv/GivePosition_Request.msg
 CMakeFiles/turtlesim_plus_interfaces: rosidl_cmake/srv/GivePosition_Response.msg
 CMakeFiles/turtlesim_plus_interfaces: /home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces/action/GetData.action
+CMakeFiles/turtlesim_plus_interfaces: /home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces/srv/YamlReq.srv
+CMakeFiles/turtlesim_plus_interfaces: rosidl_cmake/srv/YamlReq_Request.msg
+CMakeFiles/turtlesim_plus_interfaces: rosidl_cmake/srv/YamlReq_Response.msg
 CMakeFiles/turtlesim_plus_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/turtlesim_plus_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/turtlesim_plus_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl

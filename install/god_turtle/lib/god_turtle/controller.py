@@ -7,9 +7,10 @@ import time
 from rclpy.node import Node
 from std_srvs.srv import Empty
 from geometry_msgs.msg import Twist
-from std_msgs.msg import Int64
+from std_msgs.msg import Int64, Bool
 from turtlesim.msg import Pose
 from turtlesim_plus_interfaces.srv import GivePosition
+
 
 
 class ControllerNode(Node):
@@ -35,8 +36,10 @@ class ControllerNode(Node):
         self.declare_parameter('save_limit', 4)
         self.save_max = self.get_parameter('save_limit').value
         
-        self.kp_d = 3.0
-        self.kp_theta = 25
+        self.declare_parameter('kp_d',3.0)
+        self.kp_d = self.get_parameter('kp_d').value
+        self.declare_parameter('kp_theta',25.0)
+        self.kp_theta = self.get_parameter('kp_theta').value
         self.turtle_pose = [0.0,0.0,0.0]
         self.save_count = 0 # number of pizza config saved (max at 4 times [0,1,2,3])
         self.pizza_count = 1 # number of spawned pizzas
@@ -48,6 +51,7 @@ class ControllerNode(Node):
         #---------------------Topics---------------------#
         
         self.cmd_vel_pub = self.create_publisher(Twist,'cmd_vel',10)
+        self.copy_pub = self.create_publisher(Bool,'/copy',10)
         self.remaining_pizza_pub_ = self.create_publisher(Int64,'pizza_count',10)
         
         self.create_subscription(Twist, '/cmd_vel', self.callback_abs_cmd, 10)
@@ -68,6 +72,13 @@ class ControllerNode(Node):
         msg.angular.z = w
         self.cmd_vel_pub.publish(msg)
         
+    #---------------------Signal---------------------#
+        
+    def copy(self, b):
+        msg = Bool()
+        msg.data = b
+        self.copy_pub.publish(msg)
+        
     #---------------------Callback---------------------#
     def flag_req_callback(self,msg):
         self.received_flag = msg.data
@@ -76,6 +87,10 @@ class ControllerNode(Node):
         self.remaining_pizza = msg.data
 
     def timer_callback(self):
+        
+        if self.save_count == 4:
+            self.copy(True)
+        
         # self.get_logger().info(f'\n{self.pizza_count}\n{self.remaining_pizza}')
         if len(self.clear_pizza[0]) > 0:
             delta_x = self.clear_pizza[0][0]-self.turtle_pose[0]
@@ -135,6 +150,7 @@ class ControllerNode(Node):
                     self.get_logger().info(f'\n==================================\n             Clearing\n==================================')
                     
                     self.clear_pizza = self.save_pizza[self.save_count]
+    
                     
                 self.save_pizza[self.save_count] = [[],[]]
         
@@ -142,7 +158,10 @@ class ControllerNode(Node):
         self.received_flag = 0 
     def callback_abs_cmd(self,msg):
         self.cmdvel(msg.linear.x,msg.angular.z)
-        
+    
+    
+
+ 
         
     #----------------------Service----------------------#
     

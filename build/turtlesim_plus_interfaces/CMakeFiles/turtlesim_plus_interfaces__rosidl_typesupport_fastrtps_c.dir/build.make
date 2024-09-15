@@ -81,6 +81,7 @@ rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data_
 rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/turtlesim_plus_interfaces/msg/ScannerDataArray.idl
 rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/turtlesim_plus_interfaces/srv/GivePosition.idl
 rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/turtlesim_plus_interfaces/action/GetData.idl
+rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h: rosidl_adapter/turtlesim_plus_interfaces/srv/YamlReq.idl
 rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -111,6 +112,12 @@ rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__
 
 rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__type_support_c.cpp: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__type_support_c.cpp
+
+rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__rosidl_typesupport_fastrtps_c.h: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__rosidl_typesupport_fastrtps_c.h
+
+rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__rosidl_typesupport_fastrtps_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp
 
 CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__type_support_c.cpp.o: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
 CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__type_support_c.cpp
@@ -168,12 +175,27 @@ CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_t
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__type_support_c.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__type_support_c.cpp -o CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__type_support_c.cpp.s
 
+CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/flags.make
+CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp
+CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o -MF CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o.d -o CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o -c /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp
+
+CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp > CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.i
+
+CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp -o CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.s
+
 # Object files for target turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c
 turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c_OBJECTS = \
 "CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data__type_support_c.cpp.o" \
 "CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data_array__type_support_c.cpp.o" \
 "CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/give_position__type_support_c.cpp.o" \
-"CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__type_support_c.cpp.o"
+"CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__type_support_c.cpp.o" \
+"CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o"
 
 # External object files for target turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c
 turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c_EXTERNAL_OBJECTS =
@@ -182,6 +204,7 @@ libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/turtl
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data_array__type_support_c.cpp.o
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/give_position__type_support_c.cpp.o
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/action/detail/get_data__type_support_c.cpp.o
+libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp.o
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: libturtlesim_plus_interfaces__rosidl_generator_c.so
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so
@@ -197,7 +220,7 @@ libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: /opt/ros/humble/lib/librcutils.so
 libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library libturtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -216,6 +239,8 @@ CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: 
 CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/msg/detail/scanner_data_array__type_support_c.cpp
 CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/give_position__rosidl_typesupport_fastrtps_c.h
 CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/give_position__type_support_c.cpp
+CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__rosidl_typesupport_fastrtps_c.h
+CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/depend: rosidl_typesupport_fastrtps_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support_c.cpp
 	cd /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces /home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/turtlesim_plus_interfaces__rosidl_typesupport_fastrtps_c.dir/depend
 

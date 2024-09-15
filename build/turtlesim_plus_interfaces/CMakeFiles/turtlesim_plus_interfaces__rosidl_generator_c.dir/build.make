@@ -86,6 +86,7 @@ rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h: rosidl_adapter/
 rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h: rosidl_adapter/turtlesim_plus_interfaces/msg/ScannerDataArray.idl
 rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h: rosidl_adapter/turtlesim_plus_interfaces/srv/GivePosition.idl
 rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h: rosidl_adapter/turtlesim_plus_interfaces/action/GetData.idl
+rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h: rosidl_adapter/turtlesim_plus_interfaces/srv/YamlReq.idl
 rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -141,6 +142,18 @@ rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__struct.h: r
 rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__type_support.h: rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__type_support.h
 
+rosidl_generator_c/turtlesim_plus_interfaces/srv/yaml_req.h: rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_plus_interfaces/srv/yaml_req.h
+
+rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.h: rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.h
+
+rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.h: rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.h
+
+rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support.h: rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support.h
+
 rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data__functions.c: rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data__functions.c
 
@@ -152,6 +165,9 @@ rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__functions
 
 rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c: rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c
+
+rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c: rosidl_generator_c/turtlesim_plus_interfaces/msg/scanner_data.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c
 
 CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data__functions.c.o: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data__functions.c.o: rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data__functions.c
@@ -209,12 +225,27 @@ CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c -o CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c.s
 
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o: rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o -MF CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o.d -o CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o -c /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c
+
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c > CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.i
+
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c -o CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.s
+
 # Object files for target turtlesim_plus_interfaces__rosidl_generator_c
 turtlesim_plus_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data__functions.c.o" \
 "CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data_array__functions.c.o" \
 "CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__functions.c.o" \
-"CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c.o"
+"CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c.o" \
+"CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o"
 
 # External object files for target turtlesim_plus_interfaces__rosidl_generator_c
 turtlesim_plus_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -223,6 +254,7 @@ libturtlesim_plus_interfaces__rosidl_generator_c.so: CMakeFiles/turtlesim_plus_i
 libturtlesim_plus_interfaces__rosidl_generator_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/msg/detail/scanner_data_array__functions.c.o
 libturtlesim_plus_interfaces__rosidl_generator_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__functions.c.o
 libturtlesim_plus_interfaces__rosidl_generator_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/action/detail/get_data__functions.c.o
+libturtlesim_plus_interfaces__rosidl_generator_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c.o
 libturtlesim_plus_interfaces__rosidl_generator_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/build.make
 libturtlesim_plus_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 libturtlesim_plus_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
@@ -230,7 +262,7 @@ libturtlesim_plus_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libuniq
 libturtlesim_plus_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libturtlesim_plus_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libturtlesim_plus_interfaces__rosidl_generator_c.so: CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libturtlesim_plus_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libturtlesim_plus_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -260,7 +292,12 @@ CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_gene
 CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__functions.h
 CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__struct.h
 CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/give_position__type_support.h
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.c
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__functions.h
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__struct.h
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/detail/yaml_req__type_support.h
 CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/give_position.h
+CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/turtlesim_plus_interfaces/srv/yaml_req.h
 	cd /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces /home/kireiji/Documents/GitHub/Exam/src/turtlesim_plus_interfaces /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces /home/kireiji/Documents/GitHub/Exam/build/turtlesim_plus_interfaces/CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/turtlesim_plus_interfaces__rosidl_generator_c.dir/depend
 
