@@ -59,6 +59,7 @@ ROS2 Turtlesim+ Examination 1
    ```
 ## Usage
 - This package provides you `teleop_turtle.py` that control by keyboard input and 1 launch file `god_turtle.lauunch.py`. Contains with  `controller.py` use to diplay the output and compute the path, `copy_turtle.py` spawn 4 turtles to copy the path that was saved to yaml from `teleop_turtle` and distribute the position data to these turtles and `scheduler_node.py` is the node that be used to publish the state of `copy_turtle.py` that complete thier own mission and `controller_node.py` that show the status of itself (e.g pizza remaining, count of save, etc..)
+- ##**Don't forget to change YAML path in copy_turtle.py to your own path**
 
   ### 1.) Launch the `god_turtle.lauunch.py`
    ```bash
