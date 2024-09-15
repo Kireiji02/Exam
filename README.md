@@ -23,7 +23,7 @@ ROS2 Turtlesim+ Examination 1
 -  **Copy Turtle**: Spawn 4 turtles with the specific name to complete thier mission
   
 ## **System Architecture**
-![archsys](https://cdn.discordapp.com/attachments/1036539347777900635/1284673944120590377/Exam.pdf?ex=66e77d58&is=66e62bd8&hm=b0bdabed86211c65e43a3741675c66564f75986e24d3485e62719a2ef6db9109&)
+![archsys](https://cdn.discordapp.com/attachments/1036539347777900635/1284697389659066482/Exam_page-0003.jpg?ex=66e7932e&is=66e641ae&hm=b5949eb0102dcfbce3c77dbe325bcc8a1a10aed98306122bf7b5eb64304553fd&)
 
 ![archsys2](https://cdn.discordapp.com/attachments/1036539347777900635/1284697390095269968/Exam_page-0002.jpg?ex=66e7932e&is=66e641ae&hm=5456b609a23f2b945f4f27f2c35ae16452d758ef387550b90fce83e89074e495&)
 
